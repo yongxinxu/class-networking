@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Outline of my program\
+class Student: # has Lastname, Firstname, and FavoriteColor\
+	X.Roster(CN)  # given a student, what courses are they taking\
+	X.Shared(CN, Y)  # given two students, what courses are they sharing\
+\
+class Roster:  #Roster of courses for a given student\
+	R.add_course(course) # add a course to the roster of a given student\
+	R.__len__() # the length of the given roster\
+\
+class SRoster: #Roster of students for a given course\
+	SR.add_people(student) # add a new student to the roster of a given course\
+	SR.__len__() # the length of the given roster\
+\
+class ClassNetwork:\
+	CN.put(Student, course) # extend CN\
+	CN.slookup(student) # lookup a student in the network, return Roster()\
+	CN.clookup(course) # #lookup a course in the network, return SRoster()\
+	CN.graph(classlist) # to import ClassList\
+\
+	CN.StudentCount(course) # how many students in a given course\
+	CN.CourseCount(course) # how many course are taken by students in a given course\
+	CN.Popular() # the most popular course (take the most recent one)\
+	CN.Second() # the second popular course (take the most recent one)\
+	CN.CourseColor() # the most popular color in a given course (take the most recent one)}
