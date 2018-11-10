@@ -1,7 +1,7 @@
 # class-networking
 
 Here is the outline of this project:
-
+```
 class Student: # has Lastname, Firstname, and FavoriteColor
 	X.Roster(CN)  # given a student, what courses are they taking
 	X.Shared(CN, Y)  # given two students, what courses are they sharing
@@ -25,3 +25,4 @@ class ClassNetwork:
 	CN.Popular() # the most popular course (take the most recent one)
 	CN.Second() # the second popular course (take the most recent one)
 	CN.CourseColor() # the most popular color in a given course (take the most recent one)
+```
